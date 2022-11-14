@@ -1,7 +1,6 @@
 package com.example.lemonade
 
 import android.os.Bundle
-import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
@@ -17,14 +16,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.*
 import com.example.lemonade.ui.theme.LemonadeTheme
 
-var currentstep=1;
+var currentstep=1
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -101,7 +99,6 @@ fun TextWithImage(
     drawableResId: Int,
     contentDescResId: Int,
     onImageClick:() -> Unit,
-    modifier: Modifier = Modifier
 ){
     Column(modifier = Modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
